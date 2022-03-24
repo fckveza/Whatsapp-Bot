@@ -1,5 +1,5 @@
 
-# ![VHtear](https://vhtear.com/static/assets/img/brand/favicon.ico) #Whatsapp Multi Perangkat
+# ![VHtear](https://vhtear.com/static/assets/img/brand/favicon.ico) Whatsapp Multi Perangkat
 
 
 
@@ -9,11 +9,10 @@ WhatsApp MultiDevice client *Example*
 
 ----
 
-PAGES
+Source
 =====
 
-- [What is WA Selfbot ?](#what-is-WhatsApp-bot)
-    - [Source Code *Baileys*](https://github.com/tulir/whatsmeow)
+- [Source Code *Whatsmeow*](https://github.com/tulir/whatsmeow)
 
 ## Requirement
 
