@@ -64,8 +64,7 @@ func (vh *VEZZA) MessageHandler(evt interface{}) {
 
 		txt := strings.ToLower(v.Message.GetConversation())
 		to := cok.Info.Chat
-		if strings.HasPrefix(txt, "test") {
-			fmt.Println("Meeek")
+		if strings.HasPrefix(txt, "hy") {
 			vh.SendTextMessage(to, "Halloo")
 		}
 		return
