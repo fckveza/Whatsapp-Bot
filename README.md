@@ -3,7 +3,7 @@
 
 WhatsApp MultiDevice client
 
-[![GO](https://seeklogo.com/images/G/go-logo-046185B647-seeklogo.com.png)](https://go.dev/) [![Node](https://img.shields.io/badge/node-%3E=%2011.15.0-brightgreen.svg)](https://nodejs.org/) [![AUR](https://img.shields.io/aur/license/yaourt.svg)](https://github.com/fckveza/Selfbot-Whatsapp/blob/master/LICENSE) [![source](https://img.shields.io/badge/Baileys-%203.4.1-brightgreen.svg)](https://github.com/adiwajshing/Baileys) [![Chat me](https://img.shields.io/badge/chat-me%20whatsapp-1bacbc.svg)](https://wa.me/6281238552767) <br><br>
+[![GO](https://img.shields.io/badge/golang-v1.17-blue)](https://go.dev/) [![Node](https://img.shields.io/badge/node-%3E=%2011.15.0-brightgreen.svg)](https://nodejs.org/) [![AUR](https://img.shields.io/aur/license/yaourt.svg)](https://github.com/fckveza/Selfbot-Whatsapp/blob/master/LICENSE) [![source](https://img.shields.io/badge/Baileys-%203.4.1-brightgreen.svg)](https://github.com/adiwajshing/Baileys) [![Chat me](https://img.shields.io/badge/chat-me%20whatsapp-1bacbc.svg)](https://wa.me/6281238552767) <br><br>
 VHtear API's Example *beta*
 
 ----
