@@ -49,11 +49,11 @@ func (vh *VEZZA) SendMessageV2(evt interface{}, msg *string) {
 			},
 		},
 	}
-	vh.VClient.SendMessage(v.Info.Sender, "", resp)
+	vh.VClient.SendMessage(context.TODO(), v.Info.Sender, resp)
 }
 
 func (vh *VEZZA) SendTextMessage(jid types.JID, text string) {
-	vh.VClient.SendMessage(jid, "", &waProto.Message{Conversation: proto.String(text)})
+	vh.VClient.SendMessage(context.TODO(), jid, &waProto.Message{Conversation: proto.String(text)})
 }
 
 func (vh *VEZZA) MessageHandler(evt interface{}) {
