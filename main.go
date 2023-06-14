@@ -49,21 +49,29 @@ func (vh *VEZZA) SendMessageV2(evt interface{}, msg *string) {
 			},
 		},
 	}
-	vh.VClient.SendMessage(context.TODO(), v.Info.Sender, resp)
+	vh.VClient.SendMessage(context.Background(), v.Info.Sender, resp)
 }
 
 func (vh *VEZZA) SendTextMessage(jid types.JID, text string) {
-	vh.VClient.SendMessage(context.TODO(), jid, &waProto.Message{Conversation: proto.String(text)})
+	vh.VClient.SendMessage(context.Background(), jid, &waProto.Message{Conversation: proto.String(text)})
 }
 
 func (vh *VEZZA) MessageHandler(evt interface{}) {
 	switch v := evt.(type) {
 	case *events.Message:
-		cok := evt.(*events.Message)
-		fmt.Println(cok.Info.Chat)
-
-		txt := strings.ToLower(v.Message.GetConversation())
-		to := cok.Info.Chat
+		var txt string
+		text_in_ExtendedText := v.Message.ExtendedTextMessage.GetText()
+		mobile_txt := v.Message.GetConversation()
+		pc_txt := v.Message.ExtendedTextMessage.GetText()
+		case text_in_ExtendedText != "":
+			txt = strings.ToLower(text_in_ExtendedText)
+		case pc_txt != "":
+			txt = strings.ToLower(pc_txt)
+		default:
+			txt = strings.ToLower(mobile_txt)
+		}
+		to := v.Info.Chat
+		fmt.Println(v.Info.Chat)
 		if strings.HasPrefix(txt, "hy") {
 			vh.SendTextMessage(to, "Halloo")
 		}
