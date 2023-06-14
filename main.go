@@ -63,6 +63,7 @@ func (vh *VEZZA) MessageHandler(evt interface{}) {
 		text_in_ExtendedText := v.Message.ExtendedTextMessage.GetText()
 		mobile_txt := v.Message.GetConversation()
 		pc_txt := v.Message.ExtendedTextMessage.GetText()
+		switch {
 		case text_in_ExtendedText != "":
 			txt = strings.ToLower(text_in_ExtendedText)
 		case pc_txt != "":
